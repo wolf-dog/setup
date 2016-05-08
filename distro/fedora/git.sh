@@ -1,7 +1,7 @@
 #!/bin/bash
 cd $(dirname $0)
 
-sudo dnf install wget make autoconf gcc zlib-devel perl-ExtUtils-Embed -y
+sudo dnf install -y wget make autoconf gcc zlib-devel perl-ExtUtils-Embed
 
 cd ../../app/git
 ./install.sh
