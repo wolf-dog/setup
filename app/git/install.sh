@@ -5,7 +5,7 @@ fi
 
 cd ~/devel
 wget https://github.com/git/git/archive/master.tar.gz
-tar -zxvf master.tar.gz
+tar -zxf master.tar.gz
 \rm master.tar.gz
 cd git-master/
 make configure
