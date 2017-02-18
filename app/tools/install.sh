@@ -10,7 +10,7 @@ send \"y\"
 expect \"Do you want to enable key bindings\"
 send \"y\"
 expect \"Do you want to update your shell configuration files\"
-send \"n\"
+send \"y\"
 exit 0
 "
 
