@@ -13,6 +13,10 @@ make configure
 make && sudo make install
 ssh-keyscan github.com >> ~/.ssh/known_hosts
 
+cd ~/devel
+git clone git@github.com:git/git
+\rm -rf git-master
+
 cd
 wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
