@@ -1,16 +1,30 @@
 #!/bin/bash
 cd
 git clone git@github.com:wolf-dog/dotfiles
-\rm .bashrc
+
+\rm -f .bashrc
 ln -s dotfiles/.bashrc
-\rm .ctags
+
+if grep -q 'Microsoft' /proc/version; then
+  \rm -f .bashrc_windows
+  ln -s dotfiles/.bashrc_windows
+fi
+
+\rm -f .ctags
 ln -s dotfiles/.ctags
-\rm .gitconfig
+
+\rm -f .gitconfig
 ln -s dotfiles/.gitconfig
-\rm .gitignore
+
+\rm -f .gitignore
 ln -s dotfiles/.gitignore
-\rm .vim
+
+\rm -f .tmux.conf
+ln -s dotfiles/.tmux.conf
+
+\rm -f .vim
 ln -s dotfiles/.vim
-\rm .vimrc
+
+\rm -f .vimrc
 ln -s dotfiles/.vimrc
 
