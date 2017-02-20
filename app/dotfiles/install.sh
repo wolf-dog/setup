@@ -28,3 +28,11 @@ ln -s dotfiles/.vim
 \rm -f .vimrc
 ln -s dotfiles/.vimrc
 
+\rm -f .config/fish/config.fish
+mkdir -p .config/fish
+ln -s dotfiles/.config/fish/config.fish .config/fish/config.fish
+
+\rm -f .config/fish/functions/fish_user_key_bindings.fish
+mkdir -p .config/fish/functions
+ln -s dotfiles/.config/fish/functions/fish_user_key_bindings.fish .config/fish/functions/fish_user_key_bindings.fish
+
