@@ -12,3 +12,5 @@ send \"y\"
 exit 0
 "
 
+ln -s ~/.fzf/bin/fzf ~/bin/fzf
+
