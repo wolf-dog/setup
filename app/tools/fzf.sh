@@ -1,4 +1,8 @@
 #!/bin/bash
+if [ ! -d ~/bin ]; then
+    mkdir ~/bin
+fi
+
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 expect -c "
 set timeout 5
@@ -13,4 +17,3 @@ exit 0
 "
 
 ln -s ~/.fzf/bin/fzf ~/bin/fzf
-
